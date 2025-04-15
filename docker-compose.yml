@@ -1,10 +1,10 @@
 services:
-  comfyui-cpu:
-    container_name: comfyui-cpu
+  comfyui_cpu:
+    container_name: comfyui_cpu
     build:
       context: .
       dockerfile: Dockerfile
-    volumes:
-      - ./data:/opt/app
+#    volumes:
+#      - /data:/opt/app
     ports:
       - "8188:8188"
